@@ -1,0 +1,5 @@
+=============
+plone.gallery
+=============
+
+User documentation
