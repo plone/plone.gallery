@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plone.gallery">
+
+  -*- extra stuff goes here -*-
+
+  <browser:page
+    name="photo-gallery"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".photo_gallery.PhotoGallery"
+    template="photo_gallery.pt"
+    permission="zope2.View"
+    />
+
+
+</configure>
