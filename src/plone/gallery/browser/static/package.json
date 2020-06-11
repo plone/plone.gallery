@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "flexbin": "^0.2.0",
+    "spotlight.js": "^0.6.5"
+  }
+}

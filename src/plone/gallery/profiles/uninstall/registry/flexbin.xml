@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<registry
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="collective.photoswipe">
+
+  <records prefix="plone.bundles/spotlightjs"
+           interface='Products.CMFPlone.interfaces.IBundleRegistry' remove="True">
+  </records>
+
+</registry>
