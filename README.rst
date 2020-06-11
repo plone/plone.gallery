@@ -40,11 +40,27 @@ Install plone.gallery by adding it to your buildout::
 
 and then running ``bin/buildout``
 
+Usage
+-----
+
+Please make sure that you have reasonable image sizes set in your portal. Something as follow should be good.
+
+    large 1400:1400
+    preview 600:600
+    mini 400:400
+    thumb 200:200
+
+The large size is used for the zoom and mini for the preview grid view.
+Changing the other too just make sense if you change something.
+
+After you have the correct sizes, you can just change the view on every Folder or Collection in Plone to "Photo gallerie".
+
+
 TODO
 ----
 
 - add some more tests for the view
-
+- make flexbin-row-height and flexbin-space configureable
 
 Contribute
 ----------

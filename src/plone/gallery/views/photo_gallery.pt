@@ -17,7 +17,8 @@
 
           <!-- fix menu, because Plone toolbar always stays visible and moves it a bit to the left -->
           <style type="text/css">
-            #spotlight .header { padding-right: 120px !important; }
+            .template-photo-gallery #spotlight .header { padding-right: 120px !important; }
+            .template-photo-gallery #content-core a { border-bottom: 0px solid transparent !important;}
           </style>
 
           <div class="flexbin flexbin-margin">
