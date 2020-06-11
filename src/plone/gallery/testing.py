@@ -7,7 +7,7 @@ from plone.app.testing import IntegrationTesting
 from plone.app.testing import PloneSandboxLayer
 from plone.testing import z2
 
-import plone.gallery
+import plone.gallery  # NOQA:F401
 
 
 class PloneGalleryLayer(PloneSandboxLayer):
