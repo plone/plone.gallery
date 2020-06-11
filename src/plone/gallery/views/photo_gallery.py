@@ -2,6 +2,7 @@
 
 # from plone.gallery import _
 from plone.app.contenttypes.browser.folder import FolderView
+from plone.app.contenttypes.browser.collection import CollectionView
 from Products.CMFPlone.resources import add_bundle_on_request
 
 
@@ -44,3 +45,11 @@ class PhotoGallery(FolderView):
     #     images = obj.restrictedTraverse('@@images')
     #     tag = images.tag(fieldname, **kwargs)
     #     return tag
+
+
+class PhotoGalleryCollection(CollectionView):
+
+    def __call__(self):
+        add_bundle_on_request(self.request, "spotlightjs")
+        add_bundle_on_request(self.request, "flexbin")
+        return self.index()

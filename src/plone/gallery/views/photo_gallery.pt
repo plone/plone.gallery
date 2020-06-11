@@ -17,7 +17,7 @@
 
           <!-- fix menu, because Plone toolbar always stays visible and moves it a bit to the left -->
           <style type="text/css">
-            #spotlight .header { padding-right: 4em !important; }
+            #spotlight .header { padding-right: 120px !important; }
           </style>
 
           <div class="flexbin flexbin-margin">
@@ -41,7 +41,6 @@
                     subalbum_view nocall:album_ob/@@album_view;
                     random_image subalbum_view/album_random_image;
                     number_images subalbum_view/album_number_images" tal:condition="random_image">
-                <div class="grid-item">
                   <a tal:attributes="href album/getURL;
                          title album/Description">
                     <span class="photoAlbumEntryWrapper">
@@ -53,7 +52,6 @@
 )
                     </span>
                   </a>
-                </div>
               </div>
             </tal:albums>
           </div>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<object
+    i18n:domain="plone"
+    meta_type="Dexterity FTI"
+    name="Collection"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+  <property name="view_methods" purge="False">
+    <element value="photo-gallery"/>
+  </property>
+
+</object>

@@ -14,17 +14,18 @@
     class=".photo_gallery.PhotoGallery"
     template="photo_gallery.pt"
     permission="zope2.View"
+    layer="plone.gallery.interfaces.IPloneGalleryLayer"
     />
-    <!-- layer="plone.gallery.interfaces.IPloneGalleryLayer" -->
 
-  <!-- <browser:page
+  <browser:page
     name="photo-gallery"
-    title="Album grid view"
+    title="Photo gallery"
+    menu="plone_displayviews"
     for="plone.app.contenttypes.behaviors.collection.ISyndicatableCollection"
-    class=".photo_gallery.PhotoGallery"
+    class=".photo_gallery.PhotoGalleryCollection"
     template="photo_gallery.pt"
     permission="zope2.View"
-    /> -->
-<!-- plone.app.contenttypes.browser.collection.CollectionView -->
+    layer="plone.gallery.interfaces.IPloneGalleryLayer"
+    />
 
 </configure>
