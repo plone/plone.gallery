@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a2 (unreleased)
+1.0a2 (2020-06-11)
 ------------------
 
 - Fix resources files in released package
