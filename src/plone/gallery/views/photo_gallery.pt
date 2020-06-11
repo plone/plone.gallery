@@ -14,6 +14,12 @@
 
         <metal:listingmacro define-macro="listing" tal:define="portal context/@@plone_portal_state/portal;
                   image_scale portal/@@image_scale">
+
+          <!-- fix menu, because Plone toolbar always stays visible and moves it a bit to the left -->
+          <style type="text/css">
+            #spotlight .header { padding-right: 4em !important; }
+          </style>
+
           <div class="flexbin flexbin-margin">
             <tal:images tal:repeat="image images">
                 <a tal:define="scale python:image_scale.tag(image, 'image', scale='mini');"

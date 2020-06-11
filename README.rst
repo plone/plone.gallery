@@ -6,25 +6,15 @@
 plone.gallery
 =============
 
-Tell me what your product does
+A photo gallery view for Plone CMS.
 
 Features
 --------
 
-- Can be bullet points
+
+Shows photos of different sizes nicely and allows to zoom and browse thru the photos. It uses the libraries `spotlight <https://github.com/nextapps-de/spotlight>`_ and `flexbin <https://github.com/guoyunhe/flexbin>`_ in combination for that.
 
 
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
 
 
 Translations
@@ -32,7 +22,7 @@ Translations
 
 This product has been translated into
 
-- Klingon (thanks, K'Plai)
+- German (MrTango)
 
 
 Installation
@@ -50,20 +40,17 @@ Install plone.gallery by adding it to your buildout::
 
 and then running ``bin/buildout``
 
+TODO
+----
+
+- add some more tests for the view
+
 
 Contribute
 ----------
 
-- Issue Tracker: https://github.com/collective/plone.gallery/issues
-- Source Code: https://github.com/collective/plone.gallery
-- Documentation: https://docs.plone.org/foo/bar
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+- Issue Tracker: https://github.com/plone/plone.gallery/issues
+- Source Code: https://github.com/plone/plone.gallery
 
 
 License

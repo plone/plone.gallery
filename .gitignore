@@ -30,6 +30,7 @@ report.html
 .vscode/
 .tox/
 reports/
+__pycache__/
 # excludes
 !.coveragerc
 !.editorconfig
