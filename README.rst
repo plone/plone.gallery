@@ -14,7 +14,9 @@ Features
 
 Shows photos of different sizes nicely and allows to zoom and browse thru the photos. It uses the libraries `spotlight <https://github.com/nextapps-de/spotlight>`_ and `flexbin <https://github.com/guoyunhe/flexbin>`_ in combination for that.
 
+.. image:: https://raw.githubusercontent.com/plone/plone.gallery/master/docs/screenshot-gallerie-grid.jpg
 
+.. image:: https://raw.githubusercontent.com/plone/plone.gallery/master/docs/screenshot-gallerie-zoom.jpg
 
 
 Translations
