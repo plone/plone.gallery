@@ -15,7 +15,7 @@
         <metal:listingmacro define-macro="listing" tal:define="portal context/@@plone_portal_state/portal;
                   image_scale portal/@@image_scale">
 
-          <!-- fix menu, because Plone toolbar always stays visible and moves it a bit to the left -->
+          <!-- fix some css for usage in Plone  -->
           <style type="text/css">
             .template-photo-gallery #spotlight .header { padding-right: 120px !important; }
             .template-photo-gallery #content-core a { border-bottom: 0px solid transparent !important;}
@@ -26,35 +26,12 @@
                 <a tal:define="scale python:image_scale.tag(image, 'image', scale='mini');"
                    tal:condition="scale"
                    tal:attributes="href string:${image/getURL}/@@images/image/large;
-                                   title image/Description
-                                   "
+                                   title image/Title;
+                                   data-description image/Description"
                    class="spotlight">
                   <img tal:replace="structure scale" />
                 </a>
             </tal:images>
-          </div>
-
-          <div class="visualClear">            <!-- --></div>
-
-          <div class="album_grid_images">
-            <tal:albums tal:repeat="album albums">
-              <div class="photoAlbumEntry photoAlbumFolder" tal:define="album_ob album/getObject;
-                    subalbum_view nocall:album_ob/@@album_view;
-                    random_image subalbum_view/album_random_image;
-                    number_images subalbum_view/album_number_images" tal:condition="random_image">
-                  <a tal:attributes="href album/getURL;
-                         title album/Description">
-                    <span class="photoAlbumEntryWrapper">
-                      <img tal:replace="structure python:image_scale.tag(random_image, fieldname='image', scale='thumb')" />
-                    </span>
-                    <span class="photoAlbumEntryTitle">
-                      <tal:title content="album/Title">Title</tal:title>
-          (                      <tal:number content="number_images" />
-)
-                    </span>
-                  </a>
-              </div>
-            </tal:albums>
           </div>
 
           <div class="visualClear">            <!-- --></div>
