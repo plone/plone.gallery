@@ -5,7 +5,11 @@ Changelog
 1.0a3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix flexbin image height
+  [MrTango]
+
+- Fix title and description in spotlight view
+  [MrTango]
 
 
 1.0a2 (2020-06-11)
