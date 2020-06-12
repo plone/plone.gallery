@@ -29,7 +29,9 @@
                                    title image/Title;
                                    data-description image/Description"
                    class="spotlight">
-                  <img tal:replace="structure scale" />
+                  <img tal:attributes="src string:${image/getURL}/@@images/image/thumb;
+                                       alt image/Title;
+                                       title image/Title" />
                 </a>
             </tal:images>
           </div>
