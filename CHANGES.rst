@@ -5,7 +5,8 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- render img tag manually, to avoid having width and height attributes set
+  [MrTango]
 
 
 1.0a3 (2020-06-12)
