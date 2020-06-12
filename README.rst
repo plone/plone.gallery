@@ -12,16 +12,17 @@ Features
 --------
 
 
-- Shows photos of different sizes nicely
+- Shows photos of different sizes nicely and responsive
 - Allows to zoom and browse thru the photos
 - Has a white and blackmode
 - Fullscreen and Autoplay mode
 
 It uses the libraries `spotlight <https://github.com/nextapps-de/spotlight>`_ and `flexbin <https://github.com/guoyunhe/flexbin>`_ in combination for that.
 
+.. image:: https://raw.githubusercontent.com/plone/plone.gallery/master/docs/plone-gallery.gif
+
 .. image:: https://raw.githubusercontent.com/plone/plone.gallery/master/docs/screenshot-gallerie-grid.jpg
 
-.. image:: https://raw.githubusercontent.com/plone/plone.gallery/master/docs/screenshot-gallerie-zoom.jpg
 
 
 Translations
