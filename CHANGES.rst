@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a4 (unreleased)
+1.0a4 (2020-06-12)
 ------------------
 
 - render img tag manually, to avoid having width and height attributes set
