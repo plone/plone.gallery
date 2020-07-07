@@ -2,6 +2,27 @@
    If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
    This text does not appear on pypi or github. It is a comment.
 
+.. image:: https://travis-ci.org/plone/plone.gallery.svg?branch=master
+    :target: https://travis-ci.org/plone/plone.gallery
+
+.. image:: https://coveralls.io/repos/github/plone/plone.gallery/badge.svg?branch=master
+    :target: https://coveralls.io/github/plone/plone.gallery?branch=master
+    :alt: Coveralls
+
+.. image:: https://img.shields.io/pypi/v/plone.gallery.svg
+    :target: https://pypi.python.org/pypi/plone.gallery/
+    :alt: Latest Version
+
+.. image:: https://img.shields.io/pypi/status/plone.gallery.svg
+    :target: https://pypi.python.org/pypi/plone.gallery
+    :alt: Egg Status
+
+.. image:: https://img.shields.io/pypi/pyversions/plone.gallery.svg?style=plastic   :alt: Supported - Python Versions
+
+.. image:: https://img.shields.io/pypi/l/plone.gallery.svg
+    :target: https://pypi.python.org/pypi/plone.gallery/
+    :alt: License
+
 =============
 plone.gallery
 =============
