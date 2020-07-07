@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='plone.gallery',
-    version='1.0a5.dev0',
+    version='1.0',
     description="Photo gallery for Plone CMS.",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
@@ -22,22 +22,22 @@ setup(
         "Environment :: Web Environment",
         "Framework :: Plone",
         "Framework :: Plone :: Addon",
+        "Framework :: Plone :: 5.1",
         "Framework :: Plone :: 5.2",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
-        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
-    keywords='Python Plone',
+    keywords='Python Plone Photo Gallery',
     author='Maik Derstappen',
     author_email='md@derico.de',
-    url='https://github.com/collective/plone.gallery',
+    url='https://github.com/plone/plone.gallery',
     project_urls={
         'PyPI': 'https://pypi.python.org/pypi/plone.gallery',
-        'Source': 'https://github.com/collective/plone.gallery',
-        'Tracker': 'https://github.com/collective/plone.gallery/issues',
+        'Source': 'https://github.com/plone/plone.gallery',
+        'Tracker': 'https://github.com/plone/plone.gallery/issues',
         # 'Documentation': 'https://plone.gallery.readthedocs.io/en/latest/',
     },
     license='GPL version 2',
@@ -46,7 +46,7 @@ setup(
     package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,
-    python_requires="==2.7, >=3.6",
+    python_requires="==2.7, >=3.7",
     install_requires=[
         'setuptools',
         # -*- Extra requirements: -*-

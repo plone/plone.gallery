@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.0 (unreleased)
-------------------
+1.0 (2020-07-07)
+----------------
 
 - Cleanup, fixed travis setup and isort version in tox setup
   [MrTango]
