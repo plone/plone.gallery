@@ -29,7 +29,7 @@
                                    title image/Title;
                                    data-description image/Description"
                    class="spotlight">
-                  <img tal:attributes="src string:${image/getURL}/@@images/image/thumb;
+                  <img tal:attributes="src string:${image/getURL}/@@images/image/mini;
                                        alt image/Title;
                                        title image/Title" />
                 </a>
