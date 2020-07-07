@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
+from plone.app.contenttypes.browser.collection import CollectionView
 # from plone.gallery import _
 from plone.app.contenttypes.browser.folder import FolderView
-from plone.app.contenttypes.browser.collection import CollectionView
 from Products.CMFPlone.resources import add_bundle_on_request
 
 

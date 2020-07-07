@@ -40,8 +40,11 @@
       name="plone.gallery-hiddenprofiles"
       />
 
+
   <!-- -*- extra stuff goes here -*- -->
 
   <include package=".views" />
+
+
 
 </configure>

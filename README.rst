@@ -18,9 +18,11 @@ Features
 
 It uses the libraries `spotlight <https://github.com/nextapps-de/spotlight>`_ and `flexbin <https://github.com/guoyunhe/flexbin>`_ in combination for that.
 
+
 .. image:: https://raw.githubusercontent.com/plone/plone.gallery/master/docs/plone-gallery.gif
 
 Works from Phone to Big screen.
+
 
 .. image:: https://raw.githubusercontent.com/plone/plone.gallery/master/docs/screenshot-gallerie-grid.jpg
 

@@ -39,3 +39,4 @@ __pycache__/
 !.gitkeep
 !.travis.yml
 !src/plone
+/.coverage.*
