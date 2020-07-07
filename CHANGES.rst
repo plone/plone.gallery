@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.0.1 (unreleased)
-----------------
+1.0.1 (2020-07-07)
+------------------
 
 - Fix scale size in gallery grid view
   [MrTango]
