@@ -2,10 +2,11 @@ Changelog
 =========
 
 
-1.0a5 (unreleased)
+1.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Cleanup, fixed travis setup and isort version in tox setup
+  [MrTango]
 
 
 1.0a4 (2020-06-12)
