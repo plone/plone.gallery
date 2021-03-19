@@ -4,7 +4,7 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="plone.gallery">
 
-  -*- extra stuff goes here -*-
+  <include package="plone.app.contentmenu" />
 
   <browser:page
     name="photo-gallery"
