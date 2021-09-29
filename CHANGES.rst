@@ -5,7 +5,8 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix missing plone.app.contentmenu zcml dependency for plone_displayviews menu
+  [laulaz]
 
 
 1.0.2 (2021-09-29)
