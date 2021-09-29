@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.2 (unreleased)
+1.0.2 (2021-09-29)
 ------------------
 
 - fix python_requires definition in setup.py
