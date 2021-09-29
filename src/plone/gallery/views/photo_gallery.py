@@ -9,9 +9,14 @@ from Products.CMFPlone.resources import add_bundle_on_request
 class PhotoGallery(FolderView):
 
     def __call__(self):
-        add_bundle_on_request(self.request, "spotlightjs")
-        add_bundle_on_request(self.request, "flexbin")
+        self.add_resources()
         return self.index()
+
+    def add_resources(self):
+        """ override this method if you want to remove or add resources
+        """
+        add_bundle_on_request(self.request, "flexbin")
+        add_bundle_on_request(self.request, "spotlightjs")
 
     # We need to get the scale url here, without the tag.
     # right now we use the old way with the scale name in the url for the big picture

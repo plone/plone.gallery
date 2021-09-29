@@ -5,15 +5,17 @@
   <body>
 
     <metal:content-core fill-slot="content-core">
-      <metal:main_macro define-macro="content-core" tal:define="images view/album_images;
-                albums view/album_folders">
+      <metal:main_macro
+        define-macro="content-core"
+        tal:define="portal context/@@plone_portal_state/portal;
+                    images view/album_images;
+                    albums view/album_folders">
 
         <div metal:define-macro="text-field-view" id="parent-fieldname-text" class="stx" tal:define="text view/text" tal:condition="text" tal:attributes="class view/text_class">
           <div metal:define-slot="inside" tal:replace="structure text">The body</div>
         </div>
 
-        <metal:listingmacro define-macro="listing" tal:define="portal context/@@plone_portal_state/portal;
-                  image_scale portal/@@image_scale">
+        <metal:listingmacro define-macro="listing" tal:define="image_scale portal/@@image_scale">
 
           <!-- fix some css for usage in Plone  -->
           <style type="text/css">

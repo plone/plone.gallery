@@ -5,7 +5,11 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- fix python_requires definition in setup.py
+  MrTango
+
+- general cleanup and add an uninstall profile
+  MrTango
 
 
 1.0.1 (2020-07-07)

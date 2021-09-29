@@ -7,4 +7,8 @@
            interface='Products.CMFPlone.interfaces.IBundleRegistry' remove="True">
   </records>
 
+  <records prefix="plone.resources/spotlightjs"
+           interface='Products.CMFPlone.interfaces.IResourceRegistry' remove="True">
+  </records>
+
 </registry>
