@@ -40,3 +40,5 @@ __pycache__/
 !.travis.yml
 !src/plone
 /.coverage.*
+/pyrightconfig.json
+/venv/pyvenv.cfg
