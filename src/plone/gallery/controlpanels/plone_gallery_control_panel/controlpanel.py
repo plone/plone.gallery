@@ -11,16 +11,27 @@ from zope.interface import Interface
 
 
 class IPloneGalleryControlPanel(Interface):
-    myfield_name = schema.TextLine(
+    grid_image_scale = schema.Choice(
         title=_(
-            "This is an example field for this control panel",
+            u"Grid Image Scale",
         ),
         description=_(
-            "",
+            u"Image scale to use in the grid view.",
         ),
-        default="",
-        required=False,
-        readonly=False,
+        vocabulary=u"plone.app.vocabularies.ImagesScales",
+        default=u"mini",
+        required=True,
+    )
+    zoom_image_scale = schema.Choice(
+        title=_(
+            u"Zoom Image Scale",
+        ),
+        description=_(
+            u"Image scale to use when zoomed.",
+        ),
+        vocabulary=u"plone.app.vocabularies.ImagesScales",
+        default=u"large",
+        required=True,
     )
 
 
