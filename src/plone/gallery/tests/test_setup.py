@@ -34,9 +34,8 @@ class TestSetup(unittest.TestCase):
 
     def test_browserlayer(self):
         """Test that IPloneGalleryLayer is registered."""
-        from plone.gallery.interfaces import (
-            IPloneGalleryLayer)
         from plone.browserlayer import utils
+        from plone.gallery.interfaces import IPloneGalleryLayer
         self.assertIn(
             IPloneGalleryLayer,
             utils.registered_layers())
@@ -64,9 +63,8 @@ class TestUninstall(unittest.TestCase):
 
     def test_browserlayer_removed(self):
         """Test that IPloneGalleryLayer is removed."""
-        from plone.gallery.interfaces import \
-            IPloneGalleryLayer
         from plone.browserlayer import utils
+        from plone.gallery.interfaces import IPloneGalleryLayer
         self.assertNotIn(
             IPloneGalleryLayer,
             utils.registered_layers())
