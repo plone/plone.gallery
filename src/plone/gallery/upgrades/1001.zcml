@@ -1,0 +1,25 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+  xmlns:gs="http://namespaces.zope.org/genericsetup">
+
+  <gs:registerProfile name="1001"
+    title="Ugrade plone.gallery to load new control panel setting."
+    directory="1001"
+    description='Configuration for version 1001'
+    for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+    provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+  <gs:upgradeSteps source="1000"
+    destination="1001"
+    profile="plone.gallery:default">
+
+    <gs:upgradeStep title="Ugrade plone.gallery to load new control panel setting."
+      description=""
+      handler=".v1001.upgrade" />
+
+    <gs:upgradeDepends title="Ugrade plone.gallery to load new control panel setting. (GS profile)"
+      description=""
+      import_profile="plone.gallery.upgrades:1001" />
+
+  </gs:upgradeSteps>
+
+</configure>
