@@ -13,24 +13,24 @@ from zope.interface import Interface
 class IPloneGalleryControlPanel(Interface):
     grid_image_scale = schema.Choice(
         title=_(
-            u"Grid Image Scale",
+            "Grid Image Scale",
         ),
         description=_(
-            u"Image scale to use in the grid view.",
+            "Image scale to use in the grid view.",
         ),
-        vocabulary=u"plone.app.vocabularies.ImagesScales",
-        default=u"preview",
+        vocabulary="plone.app.vocabularies.ImagesScales",
+        default="preview",
         required=True,
     )
     zoom_image_scale = schema.Choice(
         title=_(
-            u"Zoom Image Scale",
+            "Zoom Image Scale",
         ),
         description=_(
-            u"Image scale to use when zoomed.",
+            "Image scale to use when zoomed.",
         ),
-        vocabulary=u"plone.app.vocabularies.ImagesScales",
-        default=u"large",
+        vocabulary="plone.app.vocabularies.ImagesScales",
+        default="large",
         required=True,
     )
 
@@ -44,7 +44,6 @@ class PloneGalleryControlPanel(RegistryEditForm):
 PloneGalleryControlPanelView = layout.wrap_form(
     PloneGalleryControlPanel, ControlPanelFormWrapper
 )
-
 
 
 @adapter(Interface, IPloneGalleryLayer)

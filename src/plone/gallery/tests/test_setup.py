@@ -21,24 +21,22 @@ class TestSetup(unittest.TestCase):
 
     def setUp(self):
         """Custom shared utility setup for tests."""
-        self.portal = self.layer['portal']
+        self.portal = self.layer["portal"]
         if get_installer:
-            self.installer = get_installer(self.portal, self.layer['request'])
+            self.installer = get_installer(self.portal, self.layer["request"])
         else:
-            self.installer = api.portal.get_tool('portal_quickinstaller')
+            self.installer = api.portal.get_tool("portal_quickinstaller")
 
     def test_product_installed(self):
         """Test if plone.gallery is installed."""
-        self.assertTrue(self.installer.isProductInstalled(
-            'plone.gallery'))
+        self.assertTrue(self.installer.isProductInstalled("plone.gallery"))
 
     def test_browserlayer(self):
         """Test that IPloneGalleryLayer is registered."""
         from plone.browserlayer import utils
         from plone.gallery.interfaces import IPloneGalleryLayer
-        self.assertIn(
-            IPloneGalleryLayer,
-            utils.registered_layers())
+
+        self.assertIn(IPloneGalleryLayer, utils.registered_layers())
 
 
 class TestUninstall(unittest.TestCase):
@@ -46,25 +44,23 @@ class TestUninstall(unittest.TestCase):
     layer = PLONE_GALLERY_INTEGRATION_TESTING
 
     def setUp(self):
-        self.portal = self.layer['portal']
+        self.portal = self.layer["portal"]
         if get_installer:
-            self.installer = get_installer(self.portal, self.layer['request'])
+            self.installer = get_installer(self.portal, self.layer["request"])
         else:
-            self.installer = api.portal.get_tool('portal_quickinstaller')
+            self.installer = api.portal.get_tool("portal_quickinstaller")
         roles_before = api.user.get_roles(TEST_USER_ID)
-        setRoles(self.portal, TEST_USER_ID, ['Manager'])
-        self.installer.uninstallProducts(['plone.gallery'])
+        setRoles(self.portal, TEST_USER_ID, ["Manager"])
+        self.installer.uninstallProducts(["plone.gallery"])
         setRoles(self.portal, TEST_USER_ID, roles_before)
 
     def test_product_uninstalled(self):
         """Test if plone.gallery is cleanly uninstalled."""
-        self.assertFalse(self.installer.isProductInstalled(
-            'plone.gallery'))
+        self.assertFalse(self.installer.isProductInstalled("plone.gallery"))
 
     def test_browserlayer_removed(self):
         """Test that IPloneGalleryLayer is removed."""
         from plone.browserlayer import utils
         from plone.gallery.interfaces import IPloneGalleryLayer
-        self.assertNotIn(
-            IPloneGalleryLayer,
-            utils.registered_layers())
+
+        self.assertNotIn(IPloneGalleryLayer, utils.registered_layers())

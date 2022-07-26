@@ -19,11 +19,12 @@ class PloneGalleryLayer(PloneSandboxLayer):
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
         import plone.restapi
+
         self.loadZCML(package=plone.restapi)
         self.loadZCML(package=plone.gallery)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'plone.gallery:default')
+        applyProfile(portal, "plone.gallery:default")
 
 
 PLONE_GALLERY_FIXTURE = PloneGalleryLayer()
@@ -31,13 +32,13 @@ PLONE_GALLERY_FIXTURE = PloneGalleryLayer()
 
 PLONE_GALLERY_INTEGRATION_TESTING = IntegrationTesting(
     bases=(PLONE_GALLERY_FIXTURE,),
-    name='PloneGalleryLayer:IntegrationTesting',
+    name="PloneGalleryLayer:IntegrationTesting",
 )
 
 
 PLONE_GALLERY_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(PLONE_GALLERY_FIXTURE,),
-    name='PloneGalleryLayer:FunctionalTesting',
+    name="PloneGalleryLayer:FunctionalTesting",
 )
 
 
@@ -47,5 +48,5 @@ PLONE_GALLERY_ACCEPTANCE_TESTING = FunctionalTesting(
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE,
     ),
-    name='PloneGalleryLayer:AcceptanceTesting',
+    name="PloneGalleryLayer:AcceptanceTesting",
 )

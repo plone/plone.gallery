@@ -3,4 +3,4 @@
 from zope.i18nmessageid import MessageFactory
 
 
-_ = MessageFactory('plone.gallery')
+_ = MessageFactory("plone.gallery")
