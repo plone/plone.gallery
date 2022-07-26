@@ -6,7 +6,7 @@
 <!-- -*- extra stuff goes here -*- -->
 
   <records interface="plone.gallery.controlpanels.plone_gallery_control_panel.controlpanel.IPloneGalleryControlPanel"
-           prefix="plone.gallery.plone_gallery_control_panel" />
+           prefix="plone.gallery" />
 
 
 </registry>

@@ -6,13 +6,13 @@
 
   <configlet
       i18n:attributes="title"
-      title="Plone Gallery Control Panel"
-      action_id="plone_gallery_control_panel-controlpanel"
-      appId="plone_gallery_control_panel-controlpanel"
+      title="Plone Gallery Settings"
+      action_id="plone-gallery-controlpanel"
+      appId="plone-gallery-controlpanel"
       category="Products"
       condition_expr=""
       icon_expr=""
-      url_expr="string:${portal_url}/@@plone_gallery_control_panel-controlpanel"
+      url_expr="string:${portal_url}/@@plone-gallery-controlpanel"
       visible="True">
     <permission>Manage Portal</permission>
   </configlet>

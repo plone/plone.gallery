@@ -36,6 +36,7 @@ Features
 - Allows to zoom and browse thru the photos
 - Has a white and blackmode
 - Fullscreen and Autoplay mode
+- Flexible setting of grid image scale and zoom image scale in gallery control panel
 
 It uses the libraries `spotlight <https://github.com/nextapps-de/spotlight>`_ and `flexbin <https://github.com/guoyunhe/flexbin>`_ in combination for that.
 

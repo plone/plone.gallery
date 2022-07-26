@@ -6,7 +6,7 @@
     i18n_domain="plone.gallery">
 
   <browser:page
-    name="plone_gallery_control_panel-controlpanel"
+    name="plone-gallery-controlpanel"
     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
     class=".controlpanel.PloneGalleryControlPanelView"
     layer="plone.gallery.interfaces.IPloneGalleryLayer"

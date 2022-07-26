@@ -19,7 +19,7 @@ class IPloneGalleryControlPanel(Interface):
             u"Image scale to use in the grid view.",
         ),
         vocabulary=u"plone.app.vocabularies.ImagesScales",
-        default=u"mini",
+        default=u"preview",
         required=True,
     )
     zoom_image_scale = schema.Choice(
@@ -37,7 +37,7 @@ class IPloneGalleryControlPanel(Interface):
 
 class PloneGalleryControlPanel(RegistryEditForm):
     schema = IPloneGalleryControlPanel
-    schema_prefix = "plone.gallery.plone_gallery_control_panel"
+    schema_prefix = "plone.gallery"
     label = _("Plone Gallery Control Panel")
 
 
@@ -52,8 +52,8 @@ class PloneGalleryControlPanelConfigletPanel(RegistryConfigletPanel):
     """Control Panel endpoint"""
 
     schema = IPloneGalleryControlPanel
-    configlet_id = "plone_gallery_control_panel-controlpanel"
+    configlet_id = "plone-gallery-controlpanel"
     configlet_category_id = "Products"
     title = _("Plone Gallery Control Panel")
     group = ""
-    schema_prefix = "plone.gallery.plone_gallery_control_panel"
+    schema_prefix = "plone.gallery"

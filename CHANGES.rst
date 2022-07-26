@@ -8,6 +8,9 @@ Changelog
 - Fix missing plone.app.contentmenu zcml dependency for plone_displayviews menu
   [laulaz]
 
+- Add gallery control panel to allow setting grid_image_scale and zoom_image_scale
+  [MrTango]
+
 
 1.0.2 (2021-09-29)
 ------------------
