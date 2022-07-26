@@ -73,3 +73,19 @@ class PhotoGalleryCollection(CollectionView):
         add_bundle_on_request(self.request, "spotlightjs")
         add_bundle_on_request(self.request, "flexbin")
         return self.index()
+
+    def grid_image_scale(self, brain):
+        grid_image_scale = api.portal.get_registry_record(
+            "plone.gallery.grid_image_scale"
+        )
+        image = brain.getObject()
+        scale_util = api.content.get_view("images", image, self.request)
+        return scale_util.scale("image", scale=grid_image_scale)
+
+    def zoom_image_scale(self, brain):
+        zoom_image_scale = api.portal.get_registry_record(
+            "plone.gallery.zoom_image_scale"
+        )
+        image = brain.getObject()
+        scale_util = api.content.get_view("images", image, self.request)
+        return scale_util.scale("image", scale=zoom_image_scale)

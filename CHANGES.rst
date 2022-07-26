@@ -5,7 +5,8 @@ Changelog
 1.0.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix gally view for collections
+  [MrTango]
 
 
 1.0.3 (2022-07-26)
