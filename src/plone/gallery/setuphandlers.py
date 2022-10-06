@@ -11,6 +11,10 @@ class HiddenProfiles(object):
             "plone.gallery:uninstall",
         ]
 
+    def getNonInstallableProducts(self):
+        """Hide the upgrades package from site-creation and quickinstaller."""
+        return ["plone.gallery.upgrades"]
+
 
 def post_install(context):
     """Post install script"""
