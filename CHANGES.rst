@@ -6,7 +6,7 @@ Changelog
 ------------------
 
 - Declare Plone 6 support and update CI
- [MrTango]
+  [MrTango]
 
 
 1.0.4 (2022-07-26)
