@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.5 (unreleased)
+1.0.5 (2022-11-22)
 ------------------
 
 - Declare Plone 6 support and update CI
