@@ -43,3 +43,4 @@ __pycache__/
 /pyrightconfig.json
 /venv/pyvenv.cfg
 /.python-version
+/_build

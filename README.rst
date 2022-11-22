@@ -23,6 +23,7 @@
     :target: https://pypi.python.org/pypi/plone.gallery/
     :alt: License
 
+=============
 plone.gallery
 =============
 
