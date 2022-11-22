@@ -5,7 +5,8 @@ Changelog
 1.0.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Declare Plone 6 support and update CI
+ [MrTango]
 
 
 1.0.4 (2022-07-26)
