@@ -13,7 +13,7 @@ htmlcov/
 include/
 lib/
 local/
-node_modules/
+node_modules
 parts/
 src/*
 dist/*
@@ -42,3 +42,4 @@ __pycache__/
 /.coverage.*
 /pyrightconfig.json
 /venv/pyvenv.cfg
+/.python-version

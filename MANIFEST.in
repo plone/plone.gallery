@@ -1,4 +1,8 @@
 graft src/plone
 graft docs
 include *.rst
+include *.txt
+include tox.ini
+exclude .gitlab-ci.yml
 global-exclude *.pyc
+global-exclude node_modules
