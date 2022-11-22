@@ -1,3 +1,7 @@
+=============
+plone.gallery
+=============
+
 .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
    If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
    This text does not appear on pypi or github. It is a comment.
@@ -23,14 +27,10 @@
     :target: https://pypi.python.org/pypi/plone.gallery/
     :alt: License
 
-=============
-plone.gallery
-=============
-
 A photo gallery view for Plone CMS.
 
 Features
---------
+========
 
 - Shows photos of different sizes nicely and responsive
 - Allows to zoom and browse thru the photos
@@ -103,6 +103,6 @@ Contribute
 
 
 License
-.......
+-------
 
 The project is licensed under the GPLv2.
