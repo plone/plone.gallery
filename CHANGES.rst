@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.6 (unreleased)
+1.0.6 (2022-11-23)
 ------------------
 
 - Just improving the PyPi description
