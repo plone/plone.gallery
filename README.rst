@@ -37,21 +37,23 @@ Features
 - Has a white and blackmode
 - Fullscreen and Autoplay mode
 - Flexible setting of grid image scale and zoom image scale in gallery control panel
+- works for folders and collections
 
 It uses the libraries `spotlight <https://github.com/nextapps-de/spotlight>`_ and `flexbin <https://github.com/guoyunhe/flexbin>`_ in combination for that.
 
 
 .. image:: https://raw.githubusercontent.com/plone/plone.gallery/master/docs/plone-gallery.gif
 
-Works from Phone to Big screen.
 
+Works from Phone to Big screen
+------------------------------
 
 .. image:: https://raw.githubusercontent.com/plone/plone.gallery/master/docs/screenshot-gallerie-grid.jpg
 
 
 
 Translations
-------------
+============
 
 This product has been translated into
 
@@ -59,7 +61,7 @@ This product has been translated into
 
 
 Installation
-------------
+============
 
 Install plone.gallery by adding it to your buildout::
 
@@ -74,7 +76,7 @@ Install plone.gallery by adding it to your buildout::
 and then running ``bin/buildout``
 
 Usage
------
+=====
 
 Please make sure that you have reasonable image sizes set in your portal. Something as follow should be good.
 
@@ -90,19 +92,19 @@ After you have the correct sizes, you can just change the view on every Folder o
 
 
 TODO
-----
+====
 
 - add some more tests for the view
 - make flexbin-row-height and flexbin-space configureable
 
 Contribute
-----------
+==========
 
 - Issue Tracker: https://github.com/plone/plone.gallery/issues
 - Source Code: https://github.com/plone/plone.gallery
 
 
 License
-.......
+=======
 
 The project is licensed under the GPLv2.

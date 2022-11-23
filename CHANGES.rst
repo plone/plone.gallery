@@ -5,7 +5,8 @@ Changelog
 1.0.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Just improving the PyPi description
+  [MrTango]
 
 
 1.0.5 (2022-11-22)
