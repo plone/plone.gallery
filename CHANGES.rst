@@ -5,7 +5,8 @@ Changelog
 1.0.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix traceback for missing cmf.ManagePortal permission (#12)
+  [laulaz]
 
 
 1.0.6 (2022-11-23)
