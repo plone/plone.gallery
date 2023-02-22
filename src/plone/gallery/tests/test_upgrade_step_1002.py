@@ -12,8 +12,8 @@ class UpgradeStepIntegrationTest(unittest.TestCase):
     layer = PLONE_GALLERY_INTEGRATION_TESTING
 
     def setUp(self):
-        self.portal = self.layer['portal']
-        setRoles(self.portal, TEST_USER_ID, ['Manager'])
+        self.portal = self.layer["portal"]
+        setRoles(self.portal, TEST_USER_ID, ["Manager"])
 
     def test_upgrade_step(self):
         # dummy, add tests here
