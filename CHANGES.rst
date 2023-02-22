@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.0 (unreleased)
+1.1.0 (2023-02-22)
 ------------------
 
 - Add TinyMCE templates with galleries and therefor always enable flexbin and spotlight resources
