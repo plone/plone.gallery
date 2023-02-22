@@ -1,0 +1,25 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+  xmlns:gs="http://namespaces.zope.org/genericsetup">
+
+  <gs:registerProfile name="1002"
+    title="Load profile to enable TinyMCE templates and resources"
+    directory="1002"
+    description='Configuration for version 1002'
+    for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+    provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+  <gs:upgradeSteps source="1001"
+    destination="1002"
+    profile="plone.gallery:default">
+
+    <gs:upgradeStep title="Load profile to enable TinyMCE templates and resources"
+      description=""
+      handler=".v1002.upgrade" />
+
+    <gs:upgradeDepends title="Load profile to enable TinyMCE templates and resources (GS profile)"
+      description=""
+      import_profile="plone.gallery.upgrades:1002" />
+
+  </gs:upgradeSteps>
+
+</configure>
