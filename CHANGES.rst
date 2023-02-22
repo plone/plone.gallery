@@ -7,6 +7,8 @@ Changelog
 
 - Add TinyMCE templates with galleries and therefor always enable flexbin and spotlight resources
  [MrTango]
+- Fix traceback for missing cmf.ManagePortal permission (#12)
+  [laulaz]
 
 
 1.0.6 (2022-11-23)
