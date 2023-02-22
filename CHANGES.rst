@@ -2,10 +2,11 @@ Changelog
 =========
 
 
-1.0.7 (unreleased)
+1.1.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add TinyMCE templates with galleries and therefor always enable flexbin and spotlight resources
+ [MrTango]
 
 
 1.0.6 (2022-11-23)

@@ -51,9 +51,6 @@
             </p>
           </metal:empty>
 
-          <!-- <script type="text/javascript"
-            tal:attributes="src string:${view/navigation_root_url}/++plone++collective.photoswipe/node_modules/masonry-layout/masonry.js" /> -->
-
         </metal:listingmacro>
 
       </metal:main_macro>
