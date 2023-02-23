@@ -11,7 +11,6 @@ import plone.gallery  # NOQA:F401
 
 
 class PloneGalleryLayer(PloneSandboxLayer):
-
     defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):

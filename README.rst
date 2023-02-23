@@ -97,7 +97,7 @@ Please make sure that you have reasonable image sizes set in your portal. Someth
 The large size is used for the zoom and mini for the preview grid view.
 Changing the other too just make sense if you change something.
 
-After you have the correct sizes, you can just change the view on every Folder or Collection in Plone to "Photo gallerie".
+After you have the correct sizes, you can just change the view on every Folder or Collection in Plone to "Photo gallery".
 
 
 TODO

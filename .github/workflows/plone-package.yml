@@ -17,8 +17,13 @@ jobs:
             matrix:
                 plone-version:
                   - 'Plone52'
-                python-version: [3.8, 3.9, '3.10']
-
+                  - 'Plone60'
+                python-version: [3.8]
+                include:
+                  - plone-version: Plone60
+                    python-version: 3.9
+                  - plone-version: Plone60
+                    python-version: '3.10'
         steps:
             - uses: actions/checkout@v2
             - uses: actions/cache@v2
