@@ -45,6 +45,7 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
+  <include package=".outputfilter" />
   <include package=".upgrades" />
 
     <include package=".controlpanels" />
