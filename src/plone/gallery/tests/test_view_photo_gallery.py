@@ -4,10 +4,10 @@ from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
 from plone.gallery.testing import PLONE_GALLERY_FUNCTIONAL_TESTING
 from plone.gallery.testing import PLONE_GALLERY_INTEGRATION_TESTING
-from zope.component import getMultiAdapter
-from zope.interface.interfaces import ComponentLookupError
 from plone.gallery.views.photo_gallery import IPhotoGallery
 from plone.gallery.views.photo_gallery import IPhotoGalleryCollection
+from zope.component import getMultiAdapter
+from zope.interface.interfaces import ComponentLookupError
 
 import unittest
 

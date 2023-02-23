@@ -6,6 +6,8 @@ from Products.CMFPlone.resources import add_bundle_on_request
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from zope.interface import implementer
 from zope.interface import Interface
+
+
 # from plone.gallery import _
 
 
@@ -17,13 +19,14 @@ class IPhotoGalleryCollection(Interface):
     """Marker Interface IPhotoGallery"""
 
 
-class BasePhotoGalleryMixin():
-    gallery_list_template = ViewPageTemplateFile('gallery_list.pt')
+class BasePhotoGalleryMixin:
+    gallery_list_template = ViewPageTemplateFile("gallery_list.pt")
+
     def grid_image_scale(self, brain):
         grid_image_scale = api.portal.get_registry_record(
             "plone.gallery.grid_image_scale"
         )
-        if hasattr(brain, 'getObject'):
+        if hasattr(brain, "getObject"):
             image = brain.getObject()
         else:
             # already the object it self
@@ -35,7 +38,7 @@ class BasePhotoGalleryMixin():
         zoom_image_scale = api.portal.get_registry_record(
             "plone.gallery.zoom_image_scale"
         )
-        if hasattr(brain, 'getObject'):
+        if hasattr(brain, "getObject"):
             image = brain.getObject()
         else:
             # already the object it self
@@ -46,7 +49,6 @@ class BasePhotoGalleryMixin():
 
 @implementer(IPhotoGallery)
 class PhotoGallery(FolderView, BasePhotoGalleryMixin):
-
     def __call__(self):
         return self.index()
 

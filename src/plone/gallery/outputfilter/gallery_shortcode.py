@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
-
 from plone import api
+
+
 try:
     from plone.base.utils import safe_text
 except ModuleNotFoundError:
@@ -53,7 +54,9 @@ class GalleryShortcode:
 
     def __call__(self, data):
         data = safe_text(data)
-        view = api.content.get_view(name="gallery-list", context=self.context, request=self.request)
+        view = api.content.get_view(
+            name="gallery-list", context=self.context, request=self.request
+        )
         gallery_markup = view()
         data = data.replace("[gallery_shortcode]", gallery_markup)
         return data

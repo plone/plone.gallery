@@ -1,0 +1,22 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="plone">
+
+    <include package="plone.behavior" file="meta.zcml"/>
+
+    <!-- -*- extra stuff goes here -*- -->
+
+    <plone:behavior
+        name="plone.gallery.related_photos"
+        title="RelatedPhotos"
+        description="Related photos behavior to be used by gallery_shortcode outputfilter in RichText."
+        provides=".related_photos.IRelatedPhotos"
+        factory=".related_photos.RelatedPhotos"
+        marker=".related_photos.IRelatedPhotosMarker"
+        />
+
+
+</configure>

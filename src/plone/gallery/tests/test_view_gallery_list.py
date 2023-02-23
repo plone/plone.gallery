@@ -4,8 +4,9 @@ from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
 from plone.gallery.testing import PLONE_GALLERY_FUNCTIONAL_TESTING
 from plone.gallery.testing import PLONE_GALLERY_INTEGRATION_TESTING
-from zope.component import getMultiAdapter
 from plone.gallery.views.gallery_list import IGalleryList
+from zope.component import getMultiAdapter
+
 import unittest
 
 

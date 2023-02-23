@@ -45,6 +45,9 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
+    <include package=".behaviors" />
+
+
   <include package=".outputfilter" />
   <include package=".upgrades" />
 
