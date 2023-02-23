@@ -55,7 +55,7 @@ jobs:
             - name: Black-Check
               run: |
                   tox -r -e black-check
-              if: matrix.python-version == '3.8'
+              if: matrix.python-version == '3.9'
             - name: Test with tox
               run: |
                   tox -r
