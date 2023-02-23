@@ -39,6 +39,7 @@ Features
 - Flexible setting of grid image scale and zoom image scale in gallery control panel
 - works for folders and collections
 - comes with TinyMCE templates for adding static galleries in Document,News items aso.
+- come with a gallery_shortcode to use in richtext like in TinyMCE editor.
 
 It uses the libraries `spotlight <https://github.com/nextapps-de/spotlight>`_ and `flexbin <https://github.com/guoyunhe/flexbin>`_ in combination for that.
 
@@ -59,6 +60,23 @@ Also usable in TinyMCE with templates.
 
 .. image:: https://raw.githubusercontent.com/plone/plone.gallery/master/docs/screenshot-gallerie-grid-richtext.jpg
 
+
+Gallery shortcode
+-----------------
+
+You can use the `gallery_shortcode` as follows in TinyMCE.
+
+Somewhere in the text place this placeholder: [gallery_shortcode]
+
+.. code-block:: html
+
+    <p>Tempor eu labore sint occaecat et esse. Irure nisi incididunt commodo exercitation aliqua. Ullamco quis quis sunt velit duis consectetur dolor aute cupidatat deserunt amet. Velit sunt eiusmod nulla proident consequat eu. Irure eiusmod aute reprehenderit occaecat laboris fugiat exercitation consectetur laboris nisi. Non ullamco commodo enim aute ex mollit est amet nostrud eu dolor. Mollit quis esse commodo irure duis veniam velit adipisicing.</p>
+
+    [gallery_shortcode]
+
+    <p>Tempor eu labore sint occaecat et esse. Irure nisi incididunt commodo exercitation aliqua. Ullamco quis quis sunt velit duis consectetur dolor aute cupidatat deserunt amet. Velit sunt eiusmod nulla proident consequat eu. Irure eiusmod aute reprehenderit occaecat laboris fugiat exercitation consectetur laboris nisi. Non ullamco commodo enim aute ex mollit est amet nostrud eu dolor. Mollit quis esse commodo irure duis veniam velit adipisicing.</p>
+
+The outputfilter will now render all images in referenced under related items as a gallery.
 
 
 Translations
@@ -103,7 +121,6 @@ After you have the correct sizes, you can just change the view on every Folder o
 TODO
 ====
 
-- add some more tests for the view
 - make flexbin-row-height and flexbin-space configureable
 
 Contribute

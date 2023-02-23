@@ -15,7 +15,7 @@
           <div metal:define-slot="inside" tal:replace="structure text">The body</div>
         </div>
 
-        <metal:listingmacro define-macro="listing" tal:define="image_scale_view portal/@@image_scale">
+        <metal:listingmacro define-macro="listing">
 
           <!-- fix some css for usage in Plone  -->
           <style type="text/css">
@@ -23,23 +23,7 @@
             .template-photo-gallery #content-core a { border-bottom: 0px solid transparent !important;}
           </style>
 
-          <div class="flexbin flexbin-margin">
-            <tal:images tal:repeat="image images">
-                <a tal:define="grid_scale python: view.grid_image_scale(image);
-                               zoom_scale python: view.zoom_image_scale(image);
-                               "
-                   tal:condition="zoom_scale"
-                   tal:attributes="href python: zoom_scale.url;
-                                   title image/Title;
-                                   data-description image/Description"
-                   class="spotlight">
-                  <img loading="lazy"
-                       tal:attributes="src python: grid_scale.url;
-                                       alt image/Title;
-                                       title image/Title" />
-                </a>
-            </tal:images>
-          </div>
+          <div tal:replace="structure python: view.gallery_list_template()" />
 
           <div class="visualClear">            <!-- --></div>
 

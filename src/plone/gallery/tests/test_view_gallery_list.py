@@ -5,8 +5,7 @@ from plone.app.testing import TEST_USER_ID
 from plone.gallery.testing import PLONE_GALLERY_FUNCTIONAL_TESTING
 from plone.gallery.testing import PLONE_GALLERY_INTEGRATION_TESTING
 from zope.component import getMultiAdapter
-from zope.interface.interfaces import ComponentLookupError
-
+from plone.gallery.views.gallery_list import IGalleryList
 import unittest
 
 
@@ -22,19 +21,9 @@ class ViewsIntegrationTest(unittest.TestCase):
 
     def test_gallery_list_is_registered(self):
         view = getMultiAdapter(
-            (self.portal["other-folder"], self.portal.REQUEST), name="gallery-list"
+            (self.portal["front-page"], self.portal.REQUEST), name="gallery-list"
         )
-        self.assertTrue(view.__name__ == "gallery-list")
-        # self.assertTrue(
-        #     'Sample View' in view(),
-        #     'Sample View is not found in gallery-list'
-        # )
-
-    def test_gallery_list_not_matching_interface(self):
-        with self.assertRaises(ComponentLookupError):
-            getMultiAdapter(
-                (self.portal["front-page"], self.portal.REQUEST), name="gallery-list"
-            )
+        self.assertTrue(IGalleryList.providedBy(view))
 
 
 class ViewsFunctionalTest(unittest.TestCase):
