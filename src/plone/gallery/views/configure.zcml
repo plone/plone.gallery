@@ -28,4 +28,6 @@
     layer="plone.gallery.interfaces.IPloneGalleryLayer"
     />
 
+  <!-- -*- extra stuff goes here -*- -->
+
 </configure>
