@@ -4,5 +4,6 @@ include *.rst
 include *.txt
 include tox.ini
 exclude .gitlab-ci.yml
-global-exclude *.pyc
-global-exclude node_modules
+global-exclude *.pyc node_modules/*`1 __pycache__
+prune src/plone/gallery/browser/static/node_modules
+prune src/plone/gallery/locales/__pycache__
