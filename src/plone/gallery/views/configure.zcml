@@ -30,4 +30,13 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
+  <browser:page
+    name="gallery-list"
+    for="*"
+    class=".gallery_list.GalleryList"
+    template="gallery_list.pt"
+    permission="zope2.View"
+    layer="plone.gallery.interfaces.IPloneGalleryLayer"
+    />
+
 </configure>

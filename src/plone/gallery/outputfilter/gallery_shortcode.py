@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
 
+
 try:
     from plone.base.utils import safe_text
 except ModuleNotFoundError:
     from Products.CMFPlone.utils import safe_text
 
-
 import logging
 import re
+
 
 logger = logging.getLogger("plone.outputfilter.spam_filter")
 

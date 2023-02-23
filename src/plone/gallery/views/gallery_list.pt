@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone.gallery"
+      metal:use-macro="context/main_template/macros/master">
+<body>
+
+  <metal:custom_title fill-slot="content-title">
+    <h1 tal:replace="structure context/@@title" />
+
+    <!-- @@title view template: -->
+    <!--
+    <h1 tal:define="title context/Title" tal:condition="title" tal:content="title">
+      Title or id
+    </h1>
+    -->
+
+  </metal:custom_title>
+
+  <metal:custom_description fill-slot="content-title">
+    <p tal:replace="structure context/@@description" />
+  </metal:custom_description>
+
+  <metal:content-core fill-slot="content-core">
+  <metal:block define-macro="content-core">
+
+    <h2>Main content</h2>
+    <!--<div tal:replace="view/my_custom_view_method" />-->
+    <!--<div tal:replace="context/my_custom_field" />-->
+
+  </metal:block>
+  </metal:content-core>
+</body>
+</html>
