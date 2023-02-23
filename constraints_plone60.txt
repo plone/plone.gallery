@@ -1,1 +1,7 @@
 -c https://dist.plone.org/release/6.0-latest/requirements.txt
+
+tox==4.3.5
+isort>=5
+black==22.8.0
+flake8==5.0.4
+coverage==7.0.5
