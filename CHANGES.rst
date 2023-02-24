@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.2 (unreleased)
+1.1.2 (2023-02-24)
 ------------------
 
 - Extend related photo list with photos from context, not override them
