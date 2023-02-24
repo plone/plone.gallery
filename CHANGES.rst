@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.1 (unreleased)
+1.1.1 (2023-02-24)
 ------------------
 
 - Add gallery gallery_shortcode feature to be used in RichText. Photos are coming from the new related photos behavior or are contained if it is a folderish type.
