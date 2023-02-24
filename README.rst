@@ -76,7 +76,10 @@ Somewhere in the text place this placeholder: [gallery_shortcode]
 
     <p>Tempor eu labore sint occaecat et esse. Irure nisi incididunt commodo exercitation aliqua. Ullamco quis quis sunt velit duis consectetur dolor aute cupidatat deserunt amet. Velit sunt eiusmod nulla proident consequat eu. Irure eiusmod aute reprehenderit occaecat laboris fugiat exercitation consectetur laboris nisi. Non ullamco commodo enim aute ex mollit est amet nostrud eu dolor. Mollit quis esse commodo irure duis veniam velit adipisicing.</p>
 
-The outputfilter will now render all images in referenced under related items as a gallery.
+The outputfilter will now render all photos in referenced under related photos or contained in the context as a gallery.
+
+You can either reference photos with the related photos field or place them into the current page if you have a folderish page.
+
 
 
 Translations

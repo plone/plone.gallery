@@ -23,9 +23,13 @@ class GalleryList(BrowserView, BasePhotoGalleryMixin):
 
     def album_images(self):
         images = []
-        for item in self.context.relatedItems:
+        # if not hasattr(self.context, "related_photos"):
+        #     return images
+        related_photos = getattr(self.context, "related_photos", [])
+        for item in related_photos:
             rel_obj = item.to_object
             if not IImage.providedBy(rel_obj):
                 continue
             images.append(rel_obj)
+        images = api.content.find(context=self.context, portal_type="Image")
         return images
