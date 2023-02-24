@@ -5,7 +5,8 @@ Changelog
 1.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add gallery gallery_shortcode feature to be used in RichText. Photos are coming from the new related photos behavior or are contained if it is a folderish type.
+  [MrTango]
 
 
 1.1.0 (2023-02-22)
