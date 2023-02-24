@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
 
 from plone import schema
+from plone.app.vocabularies.catalog import CatalogSource
+from plone.autoform import directives
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.gallery import _
 from plone.supermodel import model
 from Products.CMFPlone.utils import safe_hasattr
+from z3c import relationfield
 from zope.component import adapter
 from zope.interface import implementer
 from zope.interface import Interface
 from zope.interface import provider
-from z3c import relationfield
-from plone.app.vocabularies.catalog import CatalogSource
-from plone.autoform import directives
 
 
 # def get_base_path(path):
@@ -35,22 +35,22 @@ class IRelatedPhotos(model.Schema):
     """ """
 
     directives.widget(
-        'related_photos',
+        "related_photos",
         pattern_options={
-            'basePath': get_related_photos_base_path,
-            'selectableTypes': ['Image']
-        }
+            "basePath": get_related_photos_base_path,
+            "selectableTypes": ["Image"],
+        },
     )
     related_photos = relationfield.schema.RelationList(
         title=_(
-            u'Related photos',
+            "Related photos",
         ),
         description=_(
-            u'Related photos, rendered where you place the gallery_shortcode "[gallery_shortcode]".',
+            'Related photos, rendered where you place the gallery_shortcode "[gallery_shortcode]".',
         ),
         value_type=relationfield.schema.RelationChoice(
-           title=u'RelatedPhotos',
-           source=CatalogSource(),
+            title="RelatedPhotos",
+            source=CatalogSource(),
         ),
         required=False,
     )

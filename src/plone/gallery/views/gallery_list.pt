@@ -5,7 +5,9 @@
       i18n:domain="plone.gallery">
 <body>
 
-  <div class="flexbin flexbin-margin">
+  <div
+    class="flexbin flexbin-margin"
+    tal:condition="view/album_images|nothing">
     <tal:images tal:repeat="image view/album_images">
         <a tal:define="grid_scale python: view.grid_image_scale(image);
                         zoom_scale python: view.zoom_image_scale(image);

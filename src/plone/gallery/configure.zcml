@@ -9,12 +9,6 @@
 
   <include package="Products.CMFCore" file="permissions.zcml" />
 
-  <!--
-    Be careful if you use general includeDependencies, it can have sideffects!
-    Better import explicite packages or configurations ;)
-  -->
-  <!--<includeDependencies package="." />-->
-
   <include package=".browser" />
 
   <include file="permissions.zcml" />
@@ -45,15 +39,10 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
-    <include package=".behaviors" />
-
-
+  <include package=".behaviors" />
   <include package=".outputfilter" />
   <include package=".upgrades" />
-
-    <include package=".controlpanels" />
-
-
+  <include package=".controlpanels" />
   <include package=".views" />
 
 

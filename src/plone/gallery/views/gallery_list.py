@@ -31,5 +31,11 @@ class GalleryList(BrowserView, BasePhotoGalleryMixin):
             if not IImage.providedBy(rel_obj):
                 continue
             images.append(rel_obj)
-        images = api.content.find(context=self.context, portal_type="Image")
+        images.extend(
+            api.content.find(
+                context=self.context,
+                portal_type="Image",
+                sort_on="getObjPositionInParent",
+            )
+        )
         return images

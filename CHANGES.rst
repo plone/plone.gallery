@@ -5,7 +5,8 @@ Changelog
 1.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Extend related photo list with photos from context, not override them
+  [MrTango]
 
 
 1.1.1 (2023-02-24)
