@@ -25,7 +25,7 @@ class GalleryList(BrowserView, BasePhotoGalleryMixin):
         images = []
         # if not hasattr(self.context, "related_photos"):
         #     return images
-        related_photos = getattr(self.context, "related_photos", [])
+        related_photos = getattr(self.context, "related_photos", []) or []
         for item in related_photos:
             rel_obj = item.to_object
             if not IImage.providedBy(rel_obj):

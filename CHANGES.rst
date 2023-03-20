@@ -5,7 +5,8 @@ Changelog
 1.1.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- prevent error when related_photos attribute is None
+  [MrTango]
 
 
 1.1.2 (2023-02-24)
