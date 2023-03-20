@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.3 (unreleased)
+1.1.3 (2023-03-20)
 ------------------
 
 - prevent error when related_photos attribute is None
