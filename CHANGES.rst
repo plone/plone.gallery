@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.4 (unreleased)
+1.1.4 (2023-03-22)
 ------------------
 
 - deactivate tinyMCE templates in config, to prevent overriding existing config.
