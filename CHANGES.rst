@@ -5,7 +5,8 @@ Changelog
 1.1.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- deactivate tinyMCE templates in config, to prevent overriding existing config.
+  [MrTango]
 
 
 1.1.3 (2023-03-20)
