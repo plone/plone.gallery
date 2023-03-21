@@ -60,6 +60,17 @@ Also usable in TinyMCE with templates.
 
 .. image:: https://raw.githubusercontent.com/plone/plone.gallery/master/docs/screenshot-gallerie-grid-richtext.jpg
 
+To enable the templates, add these lines to the templates field in TinyMCE control panel.
+
+.. code-block:: json
+
+    [
+      {"title": "3 pictures as gallery", "description": "Photo gallery: 4 photos", "url": "++plone++plone.gallery/tinymce-templates/gallery-grid-3.html"},
+      {"title": "4 pictures as gallery", "description": "Photo gallery: 4 photos", "url": "++plone++plone.gallery/tinymce-templates/gallery-grid-4.html"},
+      {"title": "6 pictures as gallery", "description": "Photo gallery: 6 photos", "url": "++plone++plone.gallery/tinymce-templates/gallery-grid-6.html"},
+      {"title": "8 pictures as gallery", "description": "Photo gallery: 8 photos", "url": "++plone++plone.gallery/tinymce-templates/gallery-grid-8.html"}
+    ]
+
 
 Gallery shortcode
 -----------------

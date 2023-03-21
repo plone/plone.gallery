@@ -14,7 +14,7 @@
     </value>
   </record>
 
-  <record name="plone.templates"
+  <!-- <record name="plone.templates"
     interface="Products.CMFPlone.interfaces.controlpanel.ITinyMCESchema"
     field="templates">
     <field type="plone.registry.field.Text">
@@ -34,5 +34,5 @@
       {"title": "8 pictures as gallery", "description": "Photo gallery: 8 photos", "url": "++plone++plone.gallery/tinymce-templates/gallery-grid-8.html"}
       ]
     </value>
-  </record>
+  </record> -->
 </registry>
