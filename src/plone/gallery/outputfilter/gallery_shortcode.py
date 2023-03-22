@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-from bs4 import BeautifulSoup
+# from bs4 import BeautifulSoup
 from plone import api
+from plone.gallery.interfaces import IPloneGalleryLayer
 
 
 try:
@@ -9,7 +10,9 @@ except ModuleNotFoundError:
     from Products.CMFPlone.utils import safe_text
 
 import logging
-import re
+
+
+# import re
 
 
 logger = logging.getLogger("plone.outputfilter.spam_filter")
@@ -53,6 +56,8 @@ class GalleryShortcode:
         self.request = request
 
     def __call__(self, data):
+        if not IPloneGalleryLayer.providedBy(self.request):
+            return data
         data = safe_text(data)
         view = api.content.get_view(
             name="gallery-list", context=self.context, request=self.request

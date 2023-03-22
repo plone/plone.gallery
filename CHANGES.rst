@@ -5,7 +5,8 @@ Changelog
 1.1.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- prevent outputfilter from running when addon is not enabled
+  [MrTango]
 
 
 1.1.4 (2023-03-22)

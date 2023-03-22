@@ -2,7 +2,6 @@
 from plone import api
 from plone.app.contenttypes.browser.collection import CollectionView
 from plone.app.contenttypes.browser.folder import FolderView
-from Products.CMFPlone.resources import add_bundle_on_request
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from zope.interface import implementer
 from zope.interface import Interface
