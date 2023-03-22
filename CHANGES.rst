@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.5 (unreleased)
+1.1.5 (2023-03-22)
 ------------------
 
 - prevent outputfilter from running when addon is not enabled
