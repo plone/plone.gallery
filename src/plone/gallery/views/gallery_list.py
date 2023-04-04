@@ -36,6 +36,7 @@ class GalleryList(BrowserView, BasePhotoGalleryMixin):
                 context=self.context,
                 portal_type="Image",
                 sort_on="getObjPositionInParent",
+                depth=1,
             )
         )
         return images

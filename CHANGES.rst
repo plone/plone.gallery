@@ -5,7 +5,8 @@ Changelog
 1.1.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix serious bug in GalleryList view, which could slow down the website a lot.
+  [MrTango]
 
 
 1.1.5 (2023-03-22)
