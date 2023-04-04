@@ -16,7 +16,7 @@ long_description = "\n\n".join(
 
 setup(
     name="plone.gallery",
-    version="1.1.6",
+    version="1.1.7.dev0",
     description="Photo gallery for Plone CMS.",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
