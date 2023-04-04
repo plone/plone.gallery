@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.6 (unreleased)
+1.1.6 (2023-04-04)
 ------------------
 
 - Fix serious bug in GalleryList view, which could slow down the website a lot.
