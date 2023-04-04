@@ -48,7 +48,7 @@ class GalleryShortcode:
     order = 1000
 
     def is_enabled(self):
-        return True
+        return self.context is not None and IPloneGalleryLayer.providedBy(self.request)
 
     def __init__(self, context=None, request=None):
         self.current_status = None
@@ -56,8 +56,6 @@ class GalleryShortcode:
         self.request = request
 
     def __call__(self, data):
-        if not IPloneGalleryLayer.providedBy(self.request):
-            return data
         data = safe_text(data)
         view = api.content.get_view(
             name="gallery-list", context=self.context, request=self.request
