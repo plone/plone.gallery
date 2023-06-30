@@ -5,7 +5,8 @@ Changelog
 1.1.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix ImportError (Module plone.gallery has no global outputfilter)
+  [laulaz]
 
 
 1.1.6 (2023-04-04)
