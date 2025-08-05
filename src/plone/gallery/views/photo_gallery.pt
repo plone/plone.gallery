@@ -20,6 +20,8 @@
           <!-- fix some css for usage in Plone  -->
           <style type="text/css">
             .template-photo-gallery #spotlight .header { padding-right: 120px !important; }
+            .template-photo-gallery.plone-toolbar-left #spotlight .header { right: calc(40px + var(--plone-toolbar-width-collapsed)); }
+            .template-photo-gallery.plone-toolbar-left.plone-toolbar-left-expanded #spotlight .header { right: calc(40px + var(--plone-toolbar-width)); }
             .template-photo-gallery #content-core a { border-bottom: 0px solid transparent !important;}
           </style>
 
