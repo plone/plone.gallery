@@ -4,6 +4,17 @@
   xmlns:i18n="http://xml.zope.org/namespaces/i18n" lang="en" metal:use-macro="here/main_template/macros/master" i18n:domain="plone">
   <body>
 
+    <metal:styles fill-slot="style_slot" >
+          <!-- fix some css for usage in Plone  -->
+          <style type="text/css">
+            .template-photo-gallery #spotlight .header { padding-right: 120px !important; }
+            .template-photo-gallery.plone-toolbar-left #spotlight .header { right: calc(40px + var(--plone-toolbar-width-collapsed)); }
+            .template-photo-gallery.plone-toolbar-left.plone-toolbar-left-expanded #spotlight .header { right: calc(40px + var(--plone-toolbar-width)); }
+            .template-photo-gallery #content-core a { border-bottom: 0px solid transparent !important;}
+          </style>
+
+    </metal:styles>
+
     <metal:content-core fill-slot="content-core">
       <metal:main_macro
         define-macro="content-core"
@@ -17,13 +28,6 @@
 
         <metal:listingmacro define-macro="listing">
 
-          <!-- fix some css for usage in Plone  -->
-          <style type="text/css">
-            .template-photo-gallery #spotlight .header { padding-right: 120px !important; }
-            .template-photo-gallery.plone-toolbar-left #spotlight .header { right: calc(40px + var(--plone-toolbar-width-collapsed)); }
-            .template-photo-gallery.plone-toolbar-left.plone-toolbar-left-expanded #spotlight .header { right: calc(40px + var(--plone-toolbar-width)); }
-            .template-photo-gallery #content-core a { border-bottom: 0px solid transparent !important;}
-          </style>
 
           <div tal:replace="structure python: view.gallery_list_template()" />
 
